@@ -1,0 +1,49 @@
+@import "../../SCSS/style.scss";
+
+.cards {
+    display: flex;
+    overflow-x: auto;
+    margin: 50px 0;
+    .card-item {
+        height: 405px !important;
+        width: 255px !important;
+        border-radius: 10px;
+        border: 3px solid black;
+        margin-left: 20px;
+        img {
+            height: 400px !important;
+            width: 250px !important;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+    }
+}
+
+#carouselExample {
+    display: none;
+    width: 400px;
+    height: 400px;
+    margin: 0;
+    .carousel-inner img {
+        width: 400px;
+        height: 400px;
+        border: 3px solid black;
+        border-radius: 0.4em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .cards {
+        display: none;
+    }
+    #carouselExample {
+        display: block;
+        height: 300px !important;
+        width: 300px !important;
+        margin: 20px 0;
+        img {
+            height: 300px !important;
+            width: 300px !important;
+        }
+    }
+}
