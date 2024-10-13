@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (nums) {
             nums.forEach(num => {
                 num.addEventListener("click", function () {
-                    num.href = "tel:+998998531616"
+                    num.href = "tel:+998950625208"
                 })
             })
         }
